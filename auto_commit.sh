@@ -26,7 +26,8 @@ else
 fi
 
 # Git commands
-git pull origin master
+
+git pull origin main
 
 git add -u
 git add .
@@ -34,4 +35,4 @@ git add .
 commit_msg="Auto commit: $(date '+%Y-%m-%d %H:%M:%S')"
 git commit -m "$commit_msg" --quiet
 
-git push origin master --quiet
+git push origin main --quiet
