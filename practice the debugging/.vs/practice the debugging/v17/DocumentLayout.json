@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\projects\\c\u002B\u002B course\\c\u002B\u002B level 2 coursse 6\\practice the debugging\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E061DB34-42D5-4DEB-A25E-A6AE79B38A77}|practice the debugging.vcxproj|E:\\projects\\c\u002B\u002B course\\c\u002B\u002B level 2 coursse 6\\practice the debugging\\practice the debugging.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E061DB34-42D5-4DEB-A25E-A6AE79B38A77}|practice the debugging.vcxproj|solutionrelative:practice the debugging.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "practice the debugging.cpp",
+              "DocumentMoniker": "E:\\projects\\c\u002B\u002B course\\c\u002B\u002B level 2 coursse 6\\practice the debugging\\practice the debugging.cpp",
+              "RelativeDocumentMoniker": "practice the debugging.cpp",
+              "ToolTip": "E:\\projects\\c\u002B\u002B course\\c\u002B\u002B level 2 coursse 6\\practice the debugging\\practice the debugging.cpp",
+              "RelativeToolTip": "practice the debugging.cpp",
+              "ViewState": "AgIAABMAAAAAAAAAAAApwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-22T15:14:05.911Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
