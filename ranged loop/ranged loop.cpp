@@ -12,11 +12,13 @@ int main()
 	/*for (int &output : arr) {
 		cout << output * 10 << endl;
 	}*/
-	int sum = 0; 
-	string str = "32u112";
-	for (char loopthroughstr : str) 
-		(isdigit(loopthroughstr))? sum += char_to_int(loopthroughstr) : sum+=0 ;
-	
-	cout << "the sum= " << sum << endl;
+	//int sum = 0; 
+	//string str = "32u112";
+	// walkthrough (loop through ) elements of str
+	//for (char loopthroughstr : str) 
+	//	// trenaray if (short hand if)   if true      char_to_int--> in logic lib converts num which is char here to int  // else       
+	//	(isdigit(loopthroughstr))? sum += char_to_int(loopthroughstr) : sum+=0 ;
+	//
+	//cout << "the sum = " << sum << endl;
 
 }
