@@ -13,6 +13,10 @@ int main() {
 	// assignment 1
 	//(number_input() > 0)? cout<< "\npostive\n":cout << "\nnegative\n";
 
-	// assignment 2
 
+	// assignment 2
+	/*write program to check if number is zero, postive, negative(using nested ternary operate)*/
+	int number = number_input();
+	(number == 0) ? cout << "\nit is zero! " : (number > 0) ? cout << "\nit is postive! " : cout << "\nit is negative number!";
+	cout << "\n";
 }
