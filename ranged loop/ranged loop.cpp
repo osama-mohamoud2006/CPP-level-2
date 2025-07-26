@@ -21,4 +21,21 @@ int main()
 	//
 	//cout << "the sum = " << sum << endl;
 
+
+	int arr[10];
+	array_input(arr, 10);
+	cout << endl;
+	/*array_output(arr, 10, "output the array elements using traditional way: ");*/
+	cout << "\n==============================================================\n";
+	// output array 1 using ranged loop
+	for (int output1 : arr) 
+		/*cout << "array 1's ouput using ranged loop: " << output1 << endl;*/
+	
+cout << endl;
+
+	int arr2[] = { 10,20,30,40,50 };
+	// output using ranged loop
+	for (int output2 : arr2)
+		cout << "array2's ouput using ranged loop: " << output2 << endl;
+	cout << endl;
 }
