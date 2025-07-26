@@ -11,7 +11,9 @@ int number_input() {
 int main() {
 	// check if + or - 
 	// assignment 1
-	//(number_input() > 0)? cout<< "\npostive\n":cout << "\nnegative\n";
+	// method 1
+	(number_input() > 0)? cout<< "\npostive\n":cout << "\nnegative\n";
+	// method 2 
 
 
 	// assignment 2
