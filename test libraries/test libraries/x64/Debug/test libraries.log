@@ -1,3 +1,13 @@
 ﻿  test libraries.cpp
-E:\projects\my library\array_stuff.h(91,1): warning C4715: 'arraystuff::is_number_in_array': not all control paths return a value
-  test libraries.vcxproj -> E:\projects\c++ course\c++ level 2 course 6\test libraries\x64\Debug\test libraries.exe
+E:\projects\my library\array_stuff.h(12,7): error C2084: function 'int AllStuff::random(int,int)' already has a body
+  (compiling source file 'test%20libraries.cpp')
+      E:\projects\my library\logic_stuff.h(42,6):
+      see previous definition of 'AllStuff::random'
+  
+E:\projects\my library\array_stuff.h(65,23): error C2568: '=': unable to resolve function overload
+  (compiling source file 'test%20libraries.cpp')
+      E:\projects\my library\array_stuff.h(65,23):
+      could be 'int AllStuff::random(int,int)'
+  
+E:\projects\c++ course\c++ level 2 course 6\test libraries\test libraries.cpp(30,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+E:\projects\c++ course\c++ level 2 course 6\test libraries\test libraries.cpp(33,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data

@@ -126,8 +126,10 @@
     <ClCompile Include="test libraries.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\my library\AllStuff.h" />
     <ClInclude Include="..\..\..\my library\array_stuff.h" />
     <ClInclude Include="..\..\..\my library\inputs.h" />
+    <ClInclude Include="..\..\..\my library\logic_stuff.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
