@@ -1,2 +1,3 @@
 ﻿  Application about functions.cpp
+LINK : warning LNK4004: unable to shrink ilk file, 'Applicat.2c3cdc60\x64\Debug\Application about functions.ilk', it may be larger than it needs to be, but is still valid; error code: 1224
   Application about functions.vcxproj -> E:\projects\c++ course\c++ level 2 course 6\Application about functions\x64\Debug\Application about functions.exe

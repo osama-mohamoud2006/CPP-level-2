@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 // used input validition
 // function overload
 // default parameter
 // declration  of function above int main() 
+
 
 struct student_data {
 	string name="";
@@ -97,7 +99,7 @@ float input_grade() {
 	if (cin.fail()) {
 		cin.clear();
 		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		cout << "\n enter age agian: ";
+		cout << "\n enter grade agian: ";
 		cin >> grade;
 	}
 	return grade;
@@ -108,6 +110,7 @@ void final_output(st_total_data fdata , int length) {
 	for (int i = 0; i < length; i++) {
 		cout << "the name: " << fdata.student_data[i].name << endl;
 		cout << "the age: " << fdata.student_data[i].age << endl;
+		cout << '\n';
 	}
 }
 void final_output(st_total_data fdata, bool pass , int length) {
