@@ -14,44 +14,13 @@ struct st_total_data {
 	student_data student_data[10];
 	
 };
-
-string input_name() {
-	cout << "\nenter name: ";
-	string n;
-	cin >> n;
-	return n;
-}
-
-short input_age() {
-	short age = 0;
-	cout << "\nenter age of student: ";
-	cin >> age;
-	if (cin.fail()) {
-		cin.clear();
-		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		cout << "\n enter age agian: ";
-		cin >> age;
-	}
-	return age;
-}
-
-float input_grade( ) {
-	float grade = 0;
-	cout << "\nenter grade of student: ";
-	cin >> grade;
-	if (cin.fail()) {
-		cin.clear();
-		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		cout << "\n enter age agian: ";
-		cin >> grade;
-	}
-	return grade;
-}
-
-st_total_data fill_data() {
+string input_name();
+short input_age();
+float input_grade();
+st_total_data fill_data(int lenght) {
 	st_total_data data;
 
-	for (int i = 0; i < 2; i++) {
+	for (int i = 0; i < lenght; i++) {
 
 		data.student_data[i].name=input_name();
 		data.student_data[i].age = input_age();
@@ -62,30 +31,12 @@ st_total_data fill_data() {
 	return data;
 
 }
-
-
-void final_output( 	st_total_data fdata) {
-
-	for (int i = 0; i < 3; i++) {
-		cout << "the name: " << fdata.student_data[i].name << endl;
-		cout << "the age: " << fdata.student_data[i].age << endl;
-	  }
-}
-void final_output(st_total_data fdata, bool pass) {
-	
-	for (int i = 0; i < 3; i++) {
-		cout << "student name " << fdata.student_data[i].name << endl;
-		float avg = ((fdata.student_data[i].grade1 + fdata.student_data[i].grade2 + fdata.student_data[i].grade3) / 3);
-		cout << "the avg: "<< avg<< endl;
-		if (avg > 50) cout << "student passed! \n\n";
-		else cout << "bitch bad! " << endl;
-
-	}
-}
+void final_output(st_total_data , int);
+void final_output(st_total_data, bool , int);
 
 void start() {
 	bool pass = false;
-	st_total_data fdata =  fill_data();
+	st_total_data fdata =  fill_data(2);
 	cout << "enter what do you want student name only and age or student name and grade? ";
 	int c = 0;
 	do {
@@ -101,12 +52,12 @@ void start() {
 
 	if (c == 1) {
 		cout << "\n";
-		final_output(fdata);
+		final_output(fdata,2);
 
 	}
 	else if(c==2){
 		cout << "\n";
-		final_output(fdata, pass);
+		final_output(fdata, pass,2);
 	}
 }
 
@@ -116,3 +67,53 @@ int main() {
 
 }
 
+string input_name() {
+	
+	cout << "\nenter name: ";
+	string n;
+	cin >> n;
+	return n;
+}
+short input_age() {
+	short age = 0;
+	cout << "\nenter age of student: ";
+	cin >> age;
+	if (cin.fail()) {
+		cin.clear();
+		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cout << "\n enter age agian: ";
+		cin >> age;
+	}
+	return age;
+}
+float input_grade() {
+	float grade = 0;
+	cout << "\nenter grade of student: ";
+	cin >> grade;
+	if (cin.fail()) {
+		cin.clear();
+		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cout << "\n enter age agian: ";
+		cin >> grade;
+	}
+	return grade;
+}
+
+void final_output(st_total_data fdata , int length) {
+
+	for (int i = 0; i < length; i++) {
+		cout << "the name: " << fdata.student_data[i].name << endl;
+		cout << "the age: " << fdata.student_data[i].age << endl;
+	}
+}
+void final_output(st_total_data fdata, bool pass , int length) {
+
+	for (int i = 0; i < length; i++) {
+		cout << "student name " << fdata.student_data[i].name << endl;
+		float avg = ((fdata.student_data[i].grade1 + fdata.student_data[i].grade2 + fdata.student_data[i].grade3) / 3);
+		cout << "the avg: " << avg << endl;
+		if (avg > 50) cout << "student passed! \n\n";
+		else cout << "bitch bad! " << endl;
+
+	}
+}
