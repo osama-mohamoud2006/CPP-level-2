@@ -1,6 +1,10 @@
 #include <iostream>
 #include <string>
 using namespace std;
+// used input validition
+// function overload
+// default parameter
+// declration  of function above int main() 
 
 struct student_data {
 	string name="";
@@ -17,7 +21,7 @@ struct st_total_data {
 string input_name();
 short input_age();
 float input_grade();
-st_total_data fill_data(int lenght) {
+st_total_data fill_data(int lenght=1) {
 	st_total_data data;
 
 	for (int i = 0; i < lenght; i++) {
@@ -31,8 +35,8 @@ st_total_data fill_data(int lenght) {
 	return data;
 
 }
-void final_output(st_total_data , int);
-void final_output(st_total_data, bool , int);
+void final_output(st_total_data , int length=1);
+void final_output(st_total_data, bool , int length=1);
 
 void start() {
 	bool pass = false;
