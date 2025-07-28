@@ -14,6 +14,20 @@ int input() {
 		cout << "\nplease enter vaild number\n";
 		cin >> number;
 	}
+	return number;
+}
+ 
+int add(int a, int b) {
+	return a + b; 
+
+}
+
+int sub(int a, int b) {
+	return a - b;
+}
+
+int divison(int a, int b) {
+	return a / b;
 }
 
 int main() {
