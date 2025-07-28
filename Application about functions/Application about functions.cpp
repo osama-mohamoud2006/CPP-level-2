@@ -63,7 +63,7 @@ float input_grade( ) {
 st_total_data fill_data() {
 	st_total_data data;
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 5; i++) {
 
 		data.student_data[i].name=input_name();
 		data.student_data[i].age = input_age();
@@ -75,24 +75,7 @@ st_total_data fill_data() {
 
 }
 
-void store_output(string array_store[10]) {
-	st_total_data fdata;
-	for (int i = 0; i < 10; i++) {
-		array_store[i] = fdata.student_data[i].name;
-	}
-}
-void store_output(short age[10]) {
-	st_total_data fdata;
-	for (int i = 0; i < 10; i++) {
-		age[i] = fdata.student_data[i].age;
-	}
-}
-void store_output(float grades[10]) {
-	st_total_data fdata;
-	for (int i = 0; i < 10; i++) {
-		grades[i] = ((fdata.student_data[i].grade1+ fdata.student_data[i].grade2+ fdata.student_data[i].grade3)/3);
-	}
-}
+
 
 void final_output(string array_store[10], short age[10]) {
 	for (int o = 0; o < 10; o++) {
@@ -108,18 +91,47 @@ void final_output(string array_store[10],  float grades[10]) {
 }
 
 void start(string array_store[10], short age[10], float grades[10]) {
+	st_total_data fdata;
+	fill_data();
+
+	
+		
+		for (int i = 0; i < 5; i++) {
+			cout << fdata.student_data[i].name << endl;
+			cout << fdata.student_data[i].age << endl;
+			cout<<((fdata.student_data[i].grade1 + fdata.student_data[i].grade2 + fdata.student_data[i].grade3) / 3)<<endl;
+
+	
+	}
+	
+
 	cout << "enter what do you want student name only and age or student name and grade? ";
 	int c = 0;
 	do {
 		cout << "\n[1] for first option" << "\n" << "[2] for second option: ";
 		cin >> c;
 		if (cin.fail()) {
-			cin.clear
+			cin.clear();
+			cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+			cin >> c;
 		}
 	} while (c < 1 || c>2);
+
+	if (c == 1) {
+
+		final_output(array_store, age);
+
+	}
+	else if(c==2){
+		final_output(array_store, grades);
+	}
 }
 
 int main() {
-	fill_data();
+	string array_store[10];
+	short age[10]; 
+	float grades[10];
+	start(array_store, age, grades);
+
 }
 
