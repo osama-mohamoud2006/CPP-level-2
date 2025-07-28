@@ -1,0 +1,12 @@
+﻿  Application about functions.cpp
+E:\projects\my library\logic_stuff.h(94,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Application%20about%20functions.cpp')
+  
+E:\projects\c++ course\c++ level 2 course 6\Application about functions\Application about functions.cpp(34,12): warning C4129: 'o': unrecognized character escape sequence
+E:\projects\c++ course\c++ level 2 course 6\Application about functions\Application about functions.cpp(56,6): error C2084: function 'void array_data(enchoice)' already has a body
+      E:\projects\c++ course\c++ level 2 course 6\Application about functions\Application about functions.cpp(48,6):
+      see previous definition of 'array_data'
+  
+E:\projects\c++ course\c++ level 2 course 6\Application about functions\Application about functions.cpp(77,3): error C2264: 'array_data': error in function definition or declaration; function not called
+E:\projects\c++ course\c++ level 2 course 6\Application about functions\Application about functions.cpp(81,3): error C2264: 'array_data': error in function definition or declaration; function not called
+E:\projects\c++ course\c++ level 2 course 6\Application about functions\Application about functions.cpp(85,4): error C2264: 'array_data': error in function definition or declaration; function not called
