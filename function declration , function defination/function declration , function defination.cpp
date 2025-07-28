@@ -3,7 +3,7 @@ using namespace std;
  
 // old way to use functions
 
-// defination the function
+// defination of  the functions
 int input() {
 	cout << "enter number: ";
 	int number = 0; 
@@ -31,5 +31,11 @@ int divison(int a, int b) {
 }
 
 int main() {
+	// call functions
+	int a = input();
+	int b = input();
+	cout << add(a, b) << endl;;
+	cout<<sub(a, b)<<endl;
+	cout << divison(a, b) << endl;
 
 }
