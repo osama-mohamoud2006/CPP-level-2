@@ -2,18 +2,6 @@
 #include <string>
 using namespace std;
 
-//	- Uses a structure(struct) to group the student's data together. done 
-//	-Stores each student's name, age, and grades. done
-
-//	- Uses arrays to store the student's three grades.
-//	- Uses function overloading to :
-//---- - Print only the name and age.
-// 
-//---- - Print the name and the average grade.
-//---- - Print a list of all student names when you have multiple students.
-
-
-
 struct student_data {
 	string name="";
 	short age=0;
@@ -63,7 +51,7 @@ float input_grade( ) {
 st_total_data fill_data() {
 	st_total_data data;
 
-	for (int i = 0; i < 5; i++) {
+	for (int i = 0; i < 2; i++) {
 
 		data.student_data[i].name=input_name();
 		data.student_data[i].age = input_age();
@@ -76,39 +64,33 @@ st_total_data fill_data() {
 }
 
 
+void final_output( 	st_total_data fdata) {
 
-void final_output(string array_store[10], short age[10]) {
-	for (int o = 0; o < 10; o++) {
-		cout << "the student name: " << array_store[o];
-		cout << " " << "the student age: " << age[o] << endl;
+	for (int i = 0; i < 3; i++) {
+		cout << "the name: " << fdata.student_data[i].name << endl;
+		cout << "the age: " << fdata.student_data[i].age << endl;
 	  }
 }
-void final_output(string array_store[10],  float grades[10]) {
-	for (int o2 = 0; o2 < 10; o2++) {
-		cout << "student name " << array_store[o2] << endl;
-		cout << "and its avg grades: " << grades[o2] << endl;
+void final_output(st_total_data fdata, bool pass) {
+	
+	for (int i = 0; i < 3; i++) {
+		cout << "student name " << fdata.student_data[i].name << endl;
+		float avg = ((fdata.student_data[i].grade1 + fdata.student_data[i].grade2 + fdata.student_data[i].grade3) / 3);
+		cout << "the avg: "<< avg<< endl;
+		if (avg > 50) cout << "student passed! \n\n";
+		else cout << "bitch bad! " << endl;
+
 	}
 }
 
-void start(string array_store[10], short age[10], float grades[10]) {
-	st_total_data fdata;
-	fill_data();
-
-	
-		
-		for (int i = 0; i < 5; i++) {
-			cout << fdata.student_data[i].name << endl;
-			cout << fdata.student_data[i].age << endl;
-			cout<<((fdata.student_data[i].grade1 + fdata.student_data[i].grade2 + fdata.student_data[i].grade3) / 3)<<endl;
-
-	
-	}
-	
-
+void start() {
+	bool pass = false;
+	st_total_data fdata =  fill_data();
 	cout << "enter what do you want student name only and age or student name and grade? ";
 	int c = 0;
 	do {
 		cout << "\n[1] for first option" << "\n" << "[2] for second option: ";
+		cout << endl;
 		cin >> c;
 		if (cin.fail()) {
 			cin.clear();
@@ -118,20 +100,19 @@ void start(string array_store[10], short age[10], float grades[10]) {
 	} while (c < 1 || c>2);
 
 	if (c == 1) {
-
-		final_output(array_store, age);
+		cout << "\n";
+		final_output(fdata);
 
 	}
 	else if(c==2){
-		final_output(array_store, grades);
+		cout << "\n";
+		final_output(fdata, pass);
 	}
 }
 
 int main() {
-	string array_store[10];
-	short age[10]; 
-	float grades[10];
-	start(array_store, age, grades);
+
+	start();
 
 }
 
