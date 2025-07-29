@@ -104,7 +104,6 @@ float input_grade() {
 	}
 	return grade;
 }
-
 void final_output(st_total_data fdata , int length) {
 
 	for (int i = 0; i < length; i++) {
