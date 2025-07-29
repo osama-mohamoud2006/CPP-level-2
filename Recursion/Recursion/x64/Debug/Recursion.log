@@ -1,4 +1,2 @@
 ﻿  Recursion.cpp
-E:\projects\c++ course\c++ level 2 course 6\Recursion\Recursion.cpp(12,12): warning C4305: 'argument': truncation from '__int64' to 'int'
-E:\projects\c++ course\c++ level 2 course 6\Recursion\Recursion.cpp(12,12): warning C4309: 'argument': truncation of constant value
   Recursion.vcxproj -> E:\projects\c++ course\c++ level 2 course 6\Recursion\x64\Debug\Recursion.exe

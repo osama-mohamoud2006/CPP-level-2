@@ -9,6 +9,23 @@ using namespace std;
 //
 //}
 
+void print_end_to_start(int end = 0, int start = 0);
+
+
 int main(){
     /* sum(1,50000000000000);*/
+     print_end_to_start(5, 1);
+
+}
+
+void print_end_to_start(int end , int start ) {
+    if (end < start) {
+        cout << "go fuck yourself bitcccch!";
+        return; /// geeeeeeeet outttttttttttttttttttt!
+    }
+    
+    cout << end << endl;
+    if (end == start) return; // base
+    else print_end_to_start(end - 1, start);
+
 }
