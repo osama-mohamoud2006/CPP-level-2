@@ -9,12 +9,15 @@ using namespace std;
 //
 //}
 
+void power(int number=0, int pow=0);
+
 void print_end_to_start(int end = 0, int start = 0);
 
 
 int main(){
     /* sum(1,50000000000000);*/
-     print_end_to_start(5, 1);
+    // print_end_to_start(5, 1);
+    power(4, 4);
 
 }
 
@@ -28,4 +31,20 @@ void print_end_to_start(int end , int start ) {
     if (end == start) return; // base
     else print_end_to_start(end - 1, start);
 
+}
+
+void power(int number, int pow ) {
+    int count ;
+    // num =4 
+    // pow =4 
+    if (number >=pow) {
+        
+        power(number * number);
+        
+    }
+    else {
+        cout << number << endl;
+        return; // get out 
+    }
+   
 }
