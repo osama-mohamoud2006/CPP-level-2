@@ -12,45 +12,9 @@ using namespace std;
 // 
 //void power(int number=0, int pow=0);
 
-
-/*
-* Given a number N. Print "I love Recursion" N
-
-times.
-
-Note: Solve this problem using recursion.
-Input
-
-Only one line containing a number N
-(1?N?100)
-
-.
-Output
-
-Print "I love Recursion" N
-
-times.
-Example
-Input
-Copy
-
-3
-
-Output
-Copy
-
-I love Recursion
-I love Recursion
-I love Recursion
-
-
-*/
-
-
-
 //void print_end_to_start(int end = 0, int start = 0);
 
-//
+// p1
 //void ilove(int n ) {
 //    if (n < 1 || n < 100) {
 //        if (n != 0) {
@@ -64,11 +28,31 @@ I love Recursion
 //}
 
 
+// p2 
+void print1ton(int n, int current=1 ) { 
+    if (current > n) return; 
+    // 5--> input 
+    //1 2 3 4 5 
+     // 1 to n 
+    cout << current << endl;
+   
+        
+       
+        //5-(6) = 1
+        // 4-(4+1) = 1
+        print1ton(n, current+1);
+        
+      
+
+    
+}
+
 int main(){
     /* sum(1,50000000000000);*/
     // print_end_to_start(5, 1);
     /*power(4, 4);*/
-    ilove(3);
+    //ilove(3);
+    ;    print1ton(5);
 }
 
 //void print_end_to_start(int end , int start ) {
