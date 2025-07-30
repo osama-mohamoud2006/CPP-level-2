@@ -50,25 +50,25 @@ I love Recursion
 
 //void print_end_to_start(int end = 0, int start = 0);
 
-
-void ilove(int n ) {
-    if (n < 1 || n < 100) {
-        if (n != 0) {
-            cout << "I love Recursion" << endl;
-            ilove(n - 1);
-        }
-    }
-    else {
-        cout << "cannot do!" << endl;
-    }
-}
+//
+//void ilove(int n ) {
+//    if (n < 1 || n < 100) {
+//        if (n != 0) {
+//            cout << "I love Recursion" << endl;
+//            ilove(n - 1);
+//        }
+//    }
+//    else {
+//        cout << "cannot do!" << endl;
+//    }
+//}
 
 
 int main(){
     /* sum(1,50000000000000);*/
     // print_end_to_start(5, 1);
     /*power(4, 4);*/
-    ilove(300);
+    ilove(3);
 }
 
 //void print_end_to_start(int end , int start ) {
