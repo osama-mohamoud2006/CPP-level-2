@@ -52,7 +52,7 @@ int main(){
     // print_end_to_start(5, 1);
     /*power(4, 4);*/
     //ilove(3);
-    ;    print1ton(5);
+        print1ton(5);
 }
 
 //void print_end_to_start(int end , int start ) {
