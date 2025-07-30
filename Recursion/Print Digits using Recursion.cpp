@@ -8,12 +8,17 @@ void space(string n ,int i=0){
 
     // 3
     cout<<n[i]<<" ";
-    if(i!=n.length()){
+    if(i<n.length()){
        space(n,i+1); // i=2
     }
 
 
 }
 int main(){
-    
+    int n ;
+    cout<<"\nenter num: ";
+    cin>>n;
+
+    string m = to_string(n);
+    space(m);
 }
