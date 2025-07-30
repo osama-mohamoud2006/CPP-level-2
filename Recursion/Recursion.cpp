@@ -33,18 +33,6 @@ void print_end_to_start(int end , int start ) {
 
 }
 
-void power(int number, int pow ) {
-    int count ;
-    // num =4 
-    // pow =4 
-    if (number >=pow) {
-        
-        power(number * number);
-        
-    }
-    else {
-        cout << number << endl;
-        return; // get out 
-    }
+
    
 }
