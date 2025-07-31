@@ -20,5 +20,8 @@ void reverse_print(int m , int c=1){
     else return ; 
 }
 int main(){
-    print(5,1);
+    cout<<"from Z to A"<<endl;
+   print(5,1);
+   cout<<"\n from A to Z"<<endl;
+   reverse_print(5);
 }
