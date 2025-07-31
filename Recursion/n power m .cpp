@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void power(int n , int m=4 , int sum =1){
+void power(int n , int m , int sum =1){
 
     // 4 * 2 * 2
       if(m>0){ // m=3
