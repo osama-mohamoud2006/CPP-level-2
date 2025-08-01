@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+        "label": "Run C++ in Terminal",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+            "${file}",
+            "-o",
+            "${fileDirname}/${fileBasenameNoExtension}.exe"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Compile C++ and run in terminal"
+    },
+    {
+        "type": "cmake",
+        "label": "CMake: build",
+        "command": "build",
+        "targets": [
+            "[N/A - Select Kit]"
+        ],
+        "group": "build",
+        "problemMatcher": [],
+        "detail": "CMake template build task"
+    }
+]
+}
