@@ -12,8 +12,14 @@ Num   Square   Cube
 
 int main(){
 
-    cout<<"\n"<<setw(5)<<"Num"<<setw(9)<<"Square"<<setw(8)<<"cube"<<endl;
-    
+             cout<<"____________________________"<<endl;
+
+          cout<<"\n"<<setw(5)<<"Num"<<setw(9)<<"Square"<<setw(8)<<"cube"<<endl;
+                 for(int i=1; i<=5; i++){
+                  cout<<setw(5)<<i<<setw(9)<<i*i<<setw(8)<<i*i*i<<endl;
+              }
+
+              cout<<"____________________________"<<endl;
 
 
 
