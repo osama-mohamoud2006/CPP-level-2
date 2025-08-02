@@ -25,7 +25,9 @@ int main(){
 
 //  you cann't use printf with string(i mean here var which its data type is string )
 
-// string --> is array of chars
+
+// C-style strings (char[]) are arrays of chars
+// std::string is a C++ object that manages its own memory
 char myname[] ="osama mohamoud";
 char myage[]="19";
 
@@ -51,7 +53,14 @@ printf("\nthis is string converted to array of chars:  %s",print_string);
 
 
 // time for chars 
+char c = 'L';
+// n--> numbers is indicating the the number of spaces between the sentence and var(c)
+printf("\nsetting width of c: %*c",1,c);//l
+printf("\nanother one: %*c",2,c);//  l
+printf("\nanother one: %*c",4,c);//    l
 
+// you can also put the n you want like that without using '*' 
+printf("\ni tried to put the no.of spaces without * :%12c",c);
 
 
 
