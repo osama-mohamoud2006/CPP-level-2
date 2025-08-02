@@ -51,6 +51,9 @@ for(int i =0; i<print_f.length(); i++){
 }
 printf("\nthis is string converted to array of chars:  %s",print_string);
 
+// another way to make printf accept string and print it
+string str = print();
+printf("\n\nhi iam string lol :%s\n",str.c_str());
 
 // time for chars 
 char c = 'L';
