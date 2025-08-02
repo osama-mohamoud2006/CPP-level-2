@@ -64,7 +64,8 @@ printf("\nanother one: %*c",4,c);//    l
 
 // you can also put the n you want like that without using '*' 
 printf("\ni tried to put the no.of spaces without * :%12c",c);
-
+// print char normally 
+printf("\ni tried to put the c without any space :%c",c);
 
 
 }
