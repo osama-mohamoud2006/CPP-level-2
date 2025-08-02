@@ -9,7 +9,8 @@ from 1 to 20
 int main(){
 
 for(int i=1; i<=20; i++){
+    // make the space before i '0'
     cout<<setfill('0')<<setw(4)<<i<<" ";
 }
-
+cout<<endl;
 }
