@@ -44,12 +44,12 @@ printf("\nMy Age is %s\n",myage);
 
 
 // here i converted string to array of chars bcz printf doesnot support string var 
-string print_f = print();
-char print_string[100] ;
-for(int i =0; i<print_f.length(); i++){
-   print_string[i]=print_f[i];
-}
-printf("\nthis is string converted to array of chars:  %s",print_string);
+// string print_f = print();
+// char print_string[100] ;
+// for(int i =0; i<print_f.length(); i++){
+//    print_string[i]=print_f[i];
+// }
+// printf("\nthis is string converted to array of chars:  %s",print_string);
 
 // another way to make printf accept string and print it
 string str = print();
