@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include<iostream>
 using namespace std;
 int main(){
 
 float pi = 3.1424241241;
 // %.*f
-// print the float number , number is according the number of digits agter '.'
+// print the float number , number is according the number of digits agter '.' 
 printf("the value is: %.*f",2,pi);
 printf("the value: %.*f",3,pi);
 printf("\nthe value: %.*f\n",5,pi);
@@ -19,7 +20,5 @@ double j=9.78;
 // * means you should assign the number of digits after '.'
 // %.3f means the digits after '.' will be 3
 printf("the double value is: %.5f",j);
-float m= 9.1;
-printf("\nthe value is: %.1f\n",m);
 
 }
