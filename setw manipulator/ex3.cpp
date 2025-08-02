@@ -13,8 +13,15 @@ Mona         100
 int main(){
     string names[]= {"osama","Aya","Mona","Eman","Asia","Menna"};
     string grades[]={"95","100","90","80","76","90"};
-    
-                cout<<"Name"<<setw(8)<<"Score"<<endl;
+                  cout<<setw(10)<<"______________________________\n";
+                cout<<setw(10)<<"Name"<<setw(14)<<"Score"<<endl;
+                cout<<setw(10)<<"______________________________"<<setw(8)<<"|"<<endl;;
+                for(int i=0; i<6; i++)
+                {
+                      cout<<setw(10)<<names[i]<<setw(12)<<grades[i]<<setw(8)<<"|"<<endl;
+
+                }
+                 cout<<setw(10)<<"_____________________________"<<setw(8)<<"|"<<endl;
 
 
 
