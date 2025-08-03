@@ -29,7 +29,8 @@ int enter_number(){
 
 stdata fill_struct_data(int i ){
 	stdata data_input;
-	cout<<"\n \n"<<"employee"<<i+1<<endl<<endl;
+	cout<<"\n \n"<<"employee"<<i+1<<endl;
+	cout<<"____________________________\n";
      cout<<"\nenter first name: ";
        cin>>data_input.first_name;
 
@@ -64,8 +65,8 @@ void fill_vector(vector<stdata> &vdata){
 
 void vprint (vector<stdata> &vdata)
 {
-	cout<<"\t"<<"\n"<<"employes data"<<endl;
-	cout<<"\n_______________________________________________________________\n\n"<<endl;
+	cout<<"\n"<<"employes data"<<endl;
+	cout<<"_______________________________________________________________\n\n"<<endl;
 
 	for(stdata print :vdata ){
 
