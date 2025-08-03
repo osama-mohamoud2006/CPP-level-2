@@ -24,8 +24,8 @@ int main()
     // return true if the vector is empty otherwise return false;
     printf("\nis empty? %d\n",(x.empty()));
 
-    x.clear();
-    printf("\nis empty? %d\n",(x.empty()));
+    x.clear(); // delete all elements
+    printf("\nis empty? %d\n",(x.empty())); // will print true as it is empty now :)
 
     
 
