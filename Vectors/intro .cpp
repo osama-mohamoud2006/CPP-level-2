@@ -8,8 +8,24 @@ int main(){
 
     // use ranged loop as it container or use normal loop 
     cout<<"\n the output using ranged loop = ";
-    for(int n: vNums){ // bad practise, every time 'n' copies the vector element and cout it 
+    for(int n: vNums){ // bad practice , every time 'n' copies the vector element and cout it 
         cout<<n<<" ";
     }
     cout<<endl;
+
+
+    // you can access vector elements like array with index
+    cout<<"\n ouput using for loop with index= ";
+    for(int o=0; o<vNums.size(); o++){ // bad practice , every time 'n' copies the vector element and cout it 
+         cout<<vNums[o]<<" ";
+    }
+    cout<<endl; 
+
+    // beter use & to access vector elements it is faster and doesn't waste memory 
+      cout<<"\n the output using ranged loop& = ";
+    for(int &n: vNums){ 
+        cout<<n<<" ";
+    }
+    cout<<endl;
+
 }
