@@ -68,7 +68,7 @@ void vprint (vector<stdata> &vdata)
 	cout<<"\n"<<"employes data"<<endl;
 	cout<<"_______________________________________________________________\n\n"<<endl;
 
-	for(stdata & print :vdata ){
+	for(stdata  print :vdata ){
 
 		cout<<"first name: "<<print.first_name<<endl;
 		cout<<"last name: "<<print.last_name<<endl;
