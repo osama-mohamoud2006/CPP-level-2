@@ -22,8 +22,6 @@ void sum(int arr[100] , int length , int  index=0){
     sum( arr ,  length ,  index+1);
     }
    
-   
-
 }
 
 // another method
