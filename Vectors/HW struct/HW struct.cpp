@@ -27,8 +27,9 @@ int enter_number(){
 	return number;
 }
 
-stdata fill_struct_data(){
+stdata fill_struct_data(int i ){
 	stdata data_input;
+	cout<<"\n \n"<<"employee"<<i+1<<endl<<endl;
      cout<<"\nenter first name: ";
        cin>>data_input.first_name;
 
@@ -53,7 +54,7 @@ void fill_vector(vector<stdata> &vdata){
 		number=enter_number();
 
 		for(int i=0; i<number; i++){
-			vdata.push_back( fill_struct_data());
+			vdata.push_back( fill_struct_data(i));
 		}
 
            cout<<"\n do you want to add another employes? ";
@@ -64,15 +65,15 @@ void fill_vector(vector<stdata> &vdata){
 void vprint (vector<stdata> &vdata)
 {
 	cout<<"\t"<<"\n"<<"employes data"<<endl;
-	cout<<"\n_______________________________________________________________\n"<<endl;
+	cout<<"\n_______________________________________________________________\n\n"<<endl;
 
 	for(stdata print :vdata ){
 
-		cout<<"first name: "<<print.first_name<<setw(2)<<"|"<<endl;
-		cout<<"last name: "<<print.last_name<<setw(2)<<"|"<<endl;
-		cout<<"age: "<<print.age<<setw(2)<<"|"<<endl;
-		cout<<"salary: "<<print.salary<<setw(2)<<"|"<<endl;
-		cout<<"\n________________________________________________\n\n";
+		cout<<"first name: "<<print.first_name<<endl;
+		cout<<"last name: "<<print.last_name<<endl;
+		cout<<"age: "<<print.age<<endl;
+		cout<<"salary: "<<print.salary<<endl;
+		cout<<"\n**********************************************\n\n";
 	}
 
 	cout<<"\n_______________________________________________________________\n"<<endl;
