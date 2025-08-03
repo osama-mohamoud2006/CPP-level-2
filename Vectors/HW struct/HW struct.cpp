@@ -51,14 +51,14 @@ void fill_vector(vector<stdata> &vdata){
 	char choice = 'y';
 	int number=0 ;
 	do{
-		cout<<"How many employes: ";
+		cout<<"How many employees: ";
 		number=enter_number();
 
 		for(int i=0; i<number; i++){
 			vdata.push_back( fill_struct_data(i));
 		}
 
-           cout<<"\n do you want to add another employes? ";
+           cout<<"\n do you want to add another employees? ";
 		   cin>>choice;
 	}while(choice=='y'||choice=='Y');
 }
@@ -68,7 +68,7 @@ void vprint (vector<stdata> &vdata)
 	cout<<"\n"<<"employes data"<<endl;
 	cout<<"_______________________________________________________________\n\n"<<endl;
 
-	for(stdata print :vdata ){
+	for(stdata & print :vdata ){
 
 		cout<<"first name: "<<print.first_name<<endl;
 		cout<<"last name: "<<print.last_name<<endl;
