@@ -9,20 +9,21 @@ void read_number(vector <int> & add ){
  
     char c = 'y';
     
-    while(c=='y'||'Y'){
+    while(c=='y'|| c== 'Y'){
         int n =0 ;
-        cout<<"enter number to add to vector: ";
+        cout<<"\nenter number to add to vector: ";
         cin>>n;
         add.push_back(n);
 
         cout<<"\n you want to add another? ";
         cin>>c;
-        if(c!='y'||c!='Y') break;
+        
     }
     
 
 }
- // use & is recommended here 
+ 
+// use & is recommended here 
 void print(vector <int> & add){
     cout<<"\nvector elements: ";
     for(int &i : add){
@@ -31,6 +32,7 @@ void print(vector <int> & add){
     }
     cout<<endl;
 }
+
 int main(){
     vector <int>  add ;
    read_number( add );
