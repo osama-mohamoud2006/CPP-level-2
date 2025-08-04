@@ -7,6 +7,10 @@ int main(){
     cout<<z<<" "<<a <<endl;
 
 /////////////////////////////////////
+//////////////////Dereferencing Pointer///////
+// ptr --> address
+//*ptr -->> value 
+
   int *ptr_x = &a; // pointer stores only address of variable 
   cout<<"\nso the address of a is: "<<ptr_x<<endl;
 
