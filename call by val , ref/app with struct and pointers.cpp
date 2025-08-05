@@ -12,24 +12,25 @@ struct ststudents{
 
 ststudents fill_struct(){
     ststudents fill ; 
-    fill.name = read_full_line("enter full name: ");
-    fill.age = enter_postive_number("enter age: ");
+     ststudents *stptr  = & fill ;// make pointer for struct 
+    stptr->name = read_full_line("enter full name: ");
+    stptr->age = enter_postive_number("enter age: ");
     return fill; 
 }
 
 
 void start(ststudents &data ,vector <ststudents> &vdata  ){
-  
-
+  ststudents *stptr  = & data ;// make pointer for struct 
+vector <ststudents> *vptr = &vdata; // make pointer for vector 
 
 char choice = 'y';
 do{
   
     cout<<"\nenter how many students you want to fill: ";
-    cin>>data.num;
+    cin>>stptr->num;
 
     for(int i=0; i<data.num; i++){
-      vdata.push_back(fill_struct());
+      vptr->push_back(fill_struct());
       cout<<"\n_______________\n";
 
     }
@@ -44,22 +45,33 @@ do{
 }
 
 void final_print(ststudents data ,vector <ststudents> &vdata ){
-   //  cout<<"Full name is: "<<data_output.name<<endl;
-    //cout<<"Age is: "<<data_output.age<<endl;
+   
   start(data,  vdata  );
-  cout<<"\n the total students is :"<<data.num<<endl;
-  for(ststudents o : vdata)
-  {
-    
-    cout<<"Full name is: " <<o.name<<endl;
-    cout<<"age is: " <<o.age<<endl;
-  }
+
+//  vector <ststudents> *ptr ; 
+//     ptr= &vdata;
+
+cout<<"\n the total students is :"<<data.num<<endl;
+cout<<"____________________________________________________"<<endl;
+for(int o =0; o<vdata.size(); o++)
+{
+  ststudents *ptr= &vdata[o]; // access struct in  vector
+  cout<<"\nFull name is: " <<ptr->name<<endl;
+  cout<<"\nage is: " <<ptr->age<<endl;
+}
+
+
 
 }
 
 int main(){
-    ststudents data ;
+
+      ststudents data ;
     vector <ststudents> vdata ;
-    final_print(data , vdata);
+
+  vector <ststudents> *ptr ; // make pointer points at  vector
+    ptr= &vdata;
+     
+    final_print(data , *ptr);
 
 }
