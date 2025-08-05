@@ -18,7 +18,11 @@ int main()
      data.name = "sama";
     data.age = 24 ;
     cout<<"\nusing pointers: \n"  ;
-    cout<<ptrdata->name<<endl;
-    cout<<ptrdata->age<<endl; 
+    cout<<ptrdata->name<<endl; // will print value 
+    cout<<ptrdata->age<<endl;  // will print value 
+
+       cout<<&(ptrdata->name)<<endl; // will print address 
+    cout<<&(ptrdata->age)<<endl;  // will print address 
+
 
 }
