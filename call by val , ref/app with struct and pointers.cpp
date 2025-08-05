@@ -20,7 +20,7 @@ ststudents fill_struct(){
 
 
 void start(ststudents &data ,vector <ststudents> &vdata  ){
-  ststudents *stptr  = & data ;// make pointer for struct 
+  ststudents *stptr  = & data ;// make pointer for var data  
 vector <ststudents> *vptr = &vdata; // make pointer for vector 
 
 char choice = 'y';
@@ -67,11 +67,12 @@ for(int o =0; o<vdata.size(); o++)
 int main(){
 
       ststudents data ;
+       ststudents *pd=&data ;
     vector <ststudents> vdata ;
 
   vector <ststudents> *ptr ; // make pointer points at  vector
     ptr= &vdata;
      
-    final_print(data , *ptr);
+    final_print(*pd , *ptr);
 
 }
