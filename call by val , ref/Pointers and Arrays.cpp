@@ -27,7 +27,19 @@ int main()
 
 
   // for loop style 
+  int arr3[]={100,200,300,400};
+  int *ptr2 = arr3 ; 
 
+  cout<<"\nthe value of arr3 using pointers: ";
+  for(int i=0; i<3; i++){
+    cout<<*(ptr2+i)<<"  ";
+  }
+
+  cout<<"\nthe addresses of arr3 using pointers: ";
+  for(int i2=0; i2<3; i2++){
+    cout<<ptr2<<" ";
+  }
+cout<<endl;
 
 
 }
