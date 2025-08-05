@@ -14,7 +14,7 @@ int main()
     cout<<data.name<<endl;
     cout<<data.age<<endl;
 
-    stdata *ptrdata = &data ; 
+    stdata *ptrdata = &data ; // like any pointer stdata is data type , *ptrdata is the name of pointer , &data is must as pointer stores the address of var so you should use & with var 
      data.name = "sama";
     data.age = 24 ;
     cout<<"\nusing pointers: \n"  ;
