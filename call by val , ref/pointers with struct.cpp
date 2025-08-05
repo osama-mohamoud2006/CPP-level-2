@@ -14,6 +14,11 @@ int main()
     cout<<data.name<<endl;
     cout<<data.age<<endl;
 
-    
+    stdata *ptrdata = &data ; 
+     data.name = "sama";
+    data.age = 24 ;
+    cout<<"\nusing pointers: \n"  ;
+    cout<<ptrdata->name<<endl;
+    cout<<ptrdata->age<<endl; 
 
 }
