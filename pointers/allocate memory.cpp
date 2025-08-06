@@ -9,6 +9,7 @@ int main()
     // dynamically allocate memory
     ptr1 = new int ; 
     ptr2 = new float ; 
+    
    // assign values 
     *ptr1 = 24; 
     *ptr2 = 90.2f; 
