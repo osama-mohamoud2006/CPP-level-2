@@ -37,10 +37,11 @@ void input_array(ststudent *&ptr ){
     }
    
      for(int o=0; o<l; o++){
-           cout<<"the name is: "<<(ptr+o)->name<<endl;
+           cout<<"\nthe name is: "<<(ptr+o)->name<<endl;
       cout<<"his/her class is: "<<(ptr+o)->class_name<<endl;
      }
-   
+
+   delete [] ptr ; // deallocate 
  
 }
 
