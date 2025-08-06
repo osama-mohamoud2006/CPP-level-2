@@ -1,6 +1,8 @@
 #include <iostream>
+#include"E:\projects\my library\AllStuff.h"  
 #include <string>
 using namespace std;
+using namespace AllStuff;
 struct ststudent{
     string name= " ";
     string class_name = " ";
@@ -9,11 +11,15 @@ struct ststudent{
 
 ststudent fill_data(){
     ststudent data;
-   
-    cout<<"\nenter full name: ";
-    getline(cin,data.name);
-    cout<<"\nenter the class name: ";
-    getline(cin,data.class_name);
+    cin.ignore();
+    cout<<"\nenter name: ";
+    string name ;
+    cin>>name; 
+   data.name= name;
+   cout<<"\nenter class: ";
+   string cn ;
+   cin>>cn ; 
+   data.class_name = cn;
     return data ; 
 }
 
