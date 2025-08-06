@@ -48,6 +48,7 @@ void input_array(ststudent *&ptr ){
 
 
 int main(){
+    
     ststudent stu ;
     ststudent *ptr = &stu ;
      input_array( ptr );

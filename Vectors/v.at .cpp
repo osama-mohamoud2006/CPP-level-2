@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+using namespace std; 
+int main()
+{
+  vector<int> v{1,2,3,4,5,6,7,8,9,10};
+cout<<"\nusing .at()\n";
+for(int i=0; i<v.size(); i++){
+    cout<<v.at(i)<<endl;
+}
+cout<<"\n_________________________"<<endl;
+  cout<<v.at(0)<<endl;
+  cout<<v.at(1)<<endl;
+  cout<<v.at(3)<<endl;
+ //cout<<v.at(11)<<endl; // exception out of range 
+
+  cout<<"\n\nusing noraml index\n";
+  for(int i=0; i<v.size(); i++){
+    cout<<v[i]<<endl;
+}
+cout<<"\n_________________________"<<endl;
+  cout<<v[0]<<endl;
+       cout<<v[2]<<endl;
+        cout<<v[3]<<endl;
+         cout<<v[4]<<endl;
+      //    cout<<v[12]<<endl;
+
+}
