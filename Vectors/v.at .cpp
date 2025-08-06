@@ -25,4 +25,44 @@ cout<<"\n_________________________"<<endl;
          cout<<v[4]<<endl;
       //    cout<<v[12]<<endl;
 
+
+      vector <int > v2{10,20,30,50};
+      
+      cout<<"\n\n before updating: \n";
+      for(const int & i : v2){
+        cout<<i<<" ";
+      }
+      cout<<endl;
+
+        cout<<"\n\n after making all elements 20: \n";
+      for( int & i : v2){
+        i =20 ; 
+        cout<<i<<" ";
+      }
+        cout<<endl;
+
+        // edit element 
+        // using .at // 
+        v2.at(0) = 5;// edited index 0 
+        v2.at(1)=10;  // edited index 1
+          cout<<"\n\n after editing some elements using .at: \n";
+      for(const int & i : v2){
+         
+        cout<<i<<" ";
+      }
+        cout<<endl;
+          
+        // using index 
+        v[2]=15;
+        v[3]= 24;
+        
+
+            cout<<"\n\n after editing some elements using index: \n";
+      for(const int & i : v2){
+         
+        cout<<i<<" ";
+      }
+        cout<<endl;
+
+
 }
