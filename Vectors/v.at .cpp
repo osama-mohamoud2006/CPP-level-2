@@ -53,8 +53,8 @@ cout<<"\n_________________________"<<endl;
         cout<<endl;
           
         // using index 
-        v[2]=15;
-        v[3]= 24;
+        v2[2]=15;
+        v2[3]= 24;
         
 
             cout<<"\n\n after editing some elements using index: \n";
