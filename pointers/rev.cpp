@@ -13,7 +13,20 @@ int main()
    cout<<*ptr2<<endl; 
    delete ptr2 ;  // deallocation 
    
+   cout<<"\nenter number of students: ";
+    int n ; 
+    cin>>n;
+   int *pa = new int [n];
 
-  
+   for(int i=0; i<n; i++){
+    cout<<"enter grade: "<<i+1<<endl;
+    cin>>*(pa+i);
+   }
+  cout<<"\n____________________________________\n";
 
+     for(int i=0; i<n; i++){
+   
+    cout<< *(pa+i)<<endl;;
+   }
+  delete [] pa ;
 }
