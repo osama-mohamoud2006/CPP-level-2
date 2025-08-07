@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 int main()
 {
@@ -29,4 +30,12 @@ int main()
     cout<< *(pa+i)<<endl;;
    }
   delete [] pa ;
+cout<<"\n";
+  vector<int> v{1,2,34,4,5,5,6,216};
+  vector<int>::iterator vt;
+  for(vt = v.begin(); vt!=v.end(); vt++)
+  cout<<*vt<<" ";
+    
+  cout<<endl;
+  // No need to delete iterators; they are not dynamically allocated.
 }
