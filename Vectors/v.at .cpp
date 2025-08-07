@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 int main()
 {
   vector<int> v{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -84,11 +85,13 @@ int main()
 
   // using index
   v2[2] = 15;
-  try{
-  v2[30] = 24;
+  try
+  {
+    v2[30] = 24;
   }
-  catch(...){
-      cout<<"|out of range! \n";
+  catch (...)
+  {
+    cout << "|out of range! \n";
   }
 
   cout << "\n\n after editing some elements using index: \n";
