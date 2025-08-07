@@ -3,14 +3,11 @@
 using namespace std;
 int main(){
 
-    vector <int> v {1,2,3,4,5,6,78,9,0,10};
+vector<int> v{1,2,4,54,56,67,7,8,98,900,0,3};
+  vector<int> ::iterator vt;
+   for(vt = v.begin(); vt!= v.end(); vt++ )
+    cout<<*vt<<" ";
+   
 
-    // declare iterator 
-    vector<int> ::iterator vit ; // acts like pointer 
-// walk through elements using iterator 
-    for(vit = v.begin(); vit!=v.end(); vit++)
-    {
-        cout<<*vit<<" ";
-    }
   cout<<endl; 
 }
