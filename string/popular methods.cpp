@@ -33,11 +33,11 @@ cout<<"\n____________________________________________________________________\n"
    cout<<"\n"<<"The first occurence of word \"me\": "<< text4.find("me")<<endl; // will return the index of the first occurence of string
    
    if(text4.find("hwl")==text4.npos){ //npos to handel exception of !find() 
-     cout<<"the string you asked to find isn't exit! "<<endl;
+     cout<<"\nthe string you asked to find isn't exit! "<<endl;
    }
    
    text4.clear(); // will clear the whole string 
-   cout<<"HI iam empty fr: "<<text4<<endl; 
+   cout<<"\nHI iam empty fr: "<<text4<<endl; 
 
   
 
