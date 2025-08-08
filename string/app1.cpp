@@ -22,5 +22,5 @@ string reverse(string word){
 
 int main(){
    
-  
+  cout<< reverse( read_string("enter word to reverse: ") )<<endl;
 }
