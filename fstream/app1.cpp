@@ -13,8 +13,13 @@ struct stdata{
 
 stdata fill_data(){
     stdata data ;
+   
     data.name = read_full_line("\nenter full name: ");
-    cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+   
+      if (cin.peek() == '\n') {
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }
+   
     data.age = enter_postive_number("\nenter correct age: ");
     return data ; 
 }
