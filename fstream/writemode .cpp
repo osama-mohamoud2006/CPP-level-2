@@ -16,10 +16,5 @@ int main(){
 
         outputfile.close(); // close the file
     }
-/*
-
-
-*/
-    
 
 }
