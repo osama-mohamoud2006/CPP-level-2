@@ -4,16 +4,22 @@ using namespace std ;
 
 int main(){
 
-    fstream outputfile ; 
-    outputfile.open("outputex.text",ios::out); // write mode
-    if(outputfile.is_open())
+    fstream outputfile ; // create file stream object (not opened yet)
+
+    // open file for writing (overwrite if exists)
+    outputfile.open("output_text.text",ios::out); // write mode,
+    if(outputfile.is_open()) // check if file opened successfully
     {
-        outputfile<<"hello write mode! "<<endl;
-        outputfile<<"i love sisi!"<<endl;
+        
+        for(int i=0; i<10; i++)
+        outputfile<<"lol "<<i<<endl;
 
-        outputfile.close();
+        outputfile.close(); // close the file
     }
+/*
 
+
+*/
     
 
 }
