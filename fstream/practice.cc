@@ -5,9 +5,9 @@ using namespace std;
 
 void write_mode(string path)
 {
-    // write data to file 
+    // write to file 
     fstream wfile;
-    wfile.open(path , ios::out | ios::app);
+    wfile.open(path , ios::out );
     if(wfile.is_open()){
 
         wfile<<"All my friends tell me I should move on"<<endl;
@@ -40,7 +40,7 @@ void copy_to_another_file(string path , string to="")
 {
     fstream wfile;// for writing to second file
     fstream rfile ; // for reading (from first file)
-    
+
   rfile.open(path , ios::in);// read mode
     wfile.open(to , ios::out | ios::app);//write mode
   
