@@ -63,6 +63,7 @@ void print_file_content(string path){
         }
     }
 }
+
 int main(){
 cout<<"before delete: ";
  print_file_content( "vector_output.text");
