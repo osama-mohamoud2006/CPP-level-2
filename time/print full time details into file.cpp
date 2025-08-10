@@ -35,7 +35,7 @@
 #include <fstream>
 #include <string>
 using namespace std;
-// things i learned and apply them
+// things i learned and applied them
 //1- vector with sturct
 // handel files in c++
 //use tm struct to print local time 
