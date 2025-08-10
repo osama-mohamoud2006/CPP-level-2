@@ -1,4 +1,4 @@
- /* 
+/* 
   int tm_sec; // seconds of minutes from 0 to 61
   int tm_min; // minutes of hour from 0 to 59
   int tm_hour; // hours of day from 0 to 24
@@ -8,6 +8,25 @@
   int tm_wday; // days since sunday
   int tm_yday; // days since January 1st
   int tm_isdst; // hours of daylight savings time
+
+
+
+
+  time_t detailed_time = time(0);
+    tm* print_detailed_time = localtime(&detailed_time);
+    timefile<<"the day in month is: "<<print_detailed_time->tm_mday<<endl;
+    timefile<<"the month is: "<<print_detailed_time->tm_mon+1<<endl;
+    timefile<<"the year is: "<<print_detailed_time->tm_year+1900<<endl;
+    timefile<<"\n\n"<<print_detailed_time->tm_mday<<"/"<<print_detailed_time->tm_mon<<"/"<<print_detailed_time->tm_yday<<endl;
+
+    timefile<<"\n\n"<<"the hour is: "<<print_detailed_time->tm_hour<<endl;
+    timefile<<"the min is: "<<print_detailed_time->tm_min<<endl;
+    timefile<<"the sec is: "<<print_detailed_time->tm_sec<<endl;
+
+ timefile<<"\n\n"<<print_detailed_time->tm_hour<<":"<<print_detailed_time->tm_min<<":"<<print_detailed_time->tm_sec<<endl;
+
+
+
 */  
 
 #include <iostream>
@@ -23,6 +42,8 @@ struct sttime{
     int year =0; 
 };
 
+
+
 sttime hardcoded_struct(){
       time_t detailed_time = time(0);
     tm* print_detailed_time = localtime(&detailed_time);
@@ -30,38 +51,40 @@ sttime hardcoded_struct(){
     time.day =print_detailed_time->tm_mday;
     time.month =print_detailed_time->tm_mon+1;
     time.year=print_detailed_time->tm_year+1900;
-   
+
+
+   return  time;
 
 }
 
-void fill_vector_with_strucr(){
-    
+void fill_vector(vector<sttime> &vdata){
+    for(int i=0; i<1; i++){
+    vdata.push_back( hardcoded_struct());
+    }
 }
-void write_to_File(string path ){
+
+
+
+
+void write_to_File(string path,vector<sttime> &vdata ){
     fstream timefile;
     timefile.open(path , ios::out); // writing mode
     if(timefile.is_open()){
-       
-      time_t detailed_time = time(0);
-    tm* print_detailed_time = localtime(&detailed_time);
-    timefile<<"the day in month is: "<<print_detailed_time->tm_mday<<endl;
-    timefile<<"the month is: "<<print_detailed_time->tm_mon+1<<endl;
-    timefile<<"the year is: "<<print_detailed_time->tm_year+1900<<endl;
-    timefile<<"\n\n"<<print_detailed_time->tm_mday<<"/"<<print_detailed_time->tm_mon<<"/"<<print_detailed_time->tm_yday<<endl;
-
-    timefile<<"\n\n"<<"the hour is: "<<print_detailed_time->tm_hour<<endl;
-    timefile<<"the min is: "<<print_detailed_time->tm_min<<endl;
-    timefile<<"the sec is: "<<print_detailed_time->tm_sec<<endl;
-
- timefile<<"\n\n"<<print_detailed_time->tm_hour<<":"<<print_detailed_time->tm_min<<":"<<print_detailed_time->tm_sec<<endl;
-
+          for(sttime i: vdata){
+              timefile<<"the day is: "<<i.day<<endl;
+             timefile<<"the month is: "<<i.month<<endl;
+             timefile<<"the year is: "<<i.year<<endl;
+          }
+        
+    
  timefile.close();
 
 
-        
     }
 }
 
 int main(){
- write_to_File( "time.text" );
+    vector<sttime>vdata;
+    fill_vector(vdata);
+ write_to_File( "time2.text" ,vdata );
 }
