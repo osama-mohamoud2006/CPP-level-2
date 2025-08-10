@@ -35,36 +35,43 @@
 #include <fstream>
 #include <string>
 using namespace std;
-
+// things i learned and apply them
+//1- vector with sturct
+// handel files in c++
+//use tm struct to print local time 
 struct sttime{
     int day=0 ; 
     int month =0;
     int year =0; 
+    int hour =0 ; 
+    int min =0 ; 
+    int sec =0 ;
 };
 
-
-
+// fill struct with time data 
 sttime hardcoded_struct(){
-      time_t detailed_time = time(0);
+      time_t detailed_time = time(0); // ˈepək time 
     tm* print_detailed_time = localtime(&detailed_time);
     sttime time ; 
     time.day =print_detailed_time->tm_mday;
     time.month =print_detailed_time->tm_mon+1;
     time.year=print_detailed_time->tm_year+1900;
 
+    time.hour=print_detailed_time->tm_hour;
+    time.min =print_detailed_time->tm_min;
+   time.sec= print_detailed_time->tm_sec;
+
 
    return  time;
 
 }
 
+//push these data to vector 
 void fill_vector(vector<sttime> &vdata){
     for(int i=0; i<1; i++){
     vdata.push_back( hardcoded_struct());
     }
 }
-
-
-
 
 void write_to_File(string path,vector<sttime> &vdata ){
     fstream timefile;
@@ -75,6 +82,12 @@ void write_to_File(string path,vector<sttime> &vdata ){
              timefile<<"the month is: "<<i.month<<endl;
              timefile<<"the year is: "<<i.year<<endl;
              timefile<<"\n\n"<<i.day<<"/"<<i.month<<i.year<<endl;
+
+             timefile<<"\n\nthe hour is: "<<i.hour<<endl;
+             timefile<<"the min is: "<<i.min<<endl;
+             timefile<<"the sec is: "<<i.sec<<endl;
+             timefile<<"\n\n"<<i.hour<<":"<<i.min<<":"<<i.sec<<endl;
+            cout<<"Done! "<<endl;
           }
         
     
