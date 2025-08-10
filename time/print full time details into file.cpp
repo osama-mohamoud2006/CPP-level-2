@@ -73,6 +73,7 @@ void fill_vector(vector<sttime> &vdata){
     }
 }
 
+// access the vector which has the struct data and ios::out to file(write mode) 
 void write_to_File(string path,vector<sttime> &vdata ){
     fstream timefile;
     timefile.open(path , ios::out); // writing mode
@@ -81,12 +82,12 @@ void write_to_File(string path,vector<sttime> &vdata ){
               timefile<<"the day is: "<<i.day<<endl;
              timefile<<"the month is: "<<i.month<<endl;
              timefile<<"the year is: "<<i.year<<endl;
-             timefile<<"\n\n"<<i.day<<"/"<<i.month<<i.year<<endl;
+             timefile<<"\n\nthe date is: "<<i.day<<"/"<<i.month<<"/"<<i.year<<endl;
 
              timefile<<"\n\nthe hour is: "<<i.hour<<endl;
              timefile<<"the min is: "<<i.min<<endl;
              timefile<<"the sec is: "<<i.sec<<endl;
-             timefile<<"\n\n"<<i.hour<<":"<<i.min<<":"<<i.sec<<endl;
+             timefile<<"\n\nthe time is: "<<i.hour<<":"<<i.min<<":"<<i.sec<<endl;
             cout<<"Done! "<<endl;
           }
         
