@@ -74,6 +74,7 @@ void write_to_File(string path,vector<sttime> &vdata ){
               timefile<<"the day is: "<<i.day<<endl;
              timefile<<"the month is: "<<i.month<<endl;
              timefile<<"the year is: "<<i.year<<endl;
+             timefile<<"\n\n"<<i.day<<"/"<<i.month<<i.year<<endl;
           }
         
     
