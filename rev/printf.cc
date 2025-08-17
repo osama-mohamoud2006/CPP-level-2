@@ -47,7 +47,7 @@ int main()
     printf("\n%s,%s", details.c_str(), " osama");
 
     char c = 'v';
-    printf("\n %c", c);
+    printf("\n%c", c);
     printf("\n%*c", 4, c);
     printf("\n%*c", 10, c);
     printf("\n%76c", c);
