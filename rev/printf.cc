@@ -20,4 +20,15 @@ int main(){
         
         printf("\nthe value from functiuon is %0*d",3,sum(x,y));
 
+        //print the float numbre using printf
+        printf("\nthis is float number %.*f",2,3.134);
+        
+        float pi = 3.14232323442423423;
+        printf("\nthe pi value is %.*f\n",2,pi);
+          printf("\nthe pi value is %.9f\n",pi);
+          printf("\n %.2f +%.2f = %.2f",pi,pi,pi+pi);
+
+          float x2 = 9.6;
+          printf("\n %.4f",x2);
+
 }
