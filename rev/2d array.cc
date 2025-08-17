@@ -2,16 +2,19 @@
 #include <iomanip>
 #include <stdio.h>
 using namespace std;
-int main(){
+int main()
+{
 
     int arr[10][10];
-
-    for(int i =0 ; i<10; i++) // for rows
+    int multi = 0;
+    for (int i = 0; i < 10; i++) // for rows
     {
-         for(int c=0; c<10; c++){
-            printf("%d*%d =",i,c);
-           cout<<setw(3)<<i*c<<setw(6)<<" ";
-         }
-         cout<<endl;
+        for (int c = 0; c < 10; c++)
+        {
+            multi = (i + 1) * (c + 1);
+            cout << setw(4) << i + 1 << "*" << c + 1 << "=" << multi << setw(1);
+            multi = 0;
+        }
+        cout << endl;
     }
 }
