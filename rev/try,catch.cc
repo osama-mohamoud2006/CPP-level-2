@@ -12,7 +12,14 @@ int main(){
         cout<<v.at(4)<<endl;
          cout<<v.at(5)<<endl;
           cout<<v.at(6)<<endl;
-          // cout<<v.at(7)<<endl; // --> will throw exception 
+
+          try{
+            cout<<v.at(7)<<endl; // --> will throw exception 
+          }catch(...){
+            cout<<"\nhandeled exception!\n";
+              cout<<v.at(v.size()-1)<<endl;
+          }
+         
 cout<<endl;
              cout<<"safe access method: "<<endl; 
            for(int i=0; i<v.size(); i++){
@@ -27,6 +34,13 @@ cout<<endl;
            }
 cout<<endl;
 
-///  cout<<v[7]<<endl; // --> crash or corrupt data , print garbage 
+   // it isn't throwing exception ,so it is useless here
+   try{
+       cout<<v[7]<<endl; // --> crash or corrupt data , print garbage 
+
+    }catch(...){
+         cout<<"\nhandeled exception2!\n";
+           cout<<v[6]<<endl;
+    }
 
 }
