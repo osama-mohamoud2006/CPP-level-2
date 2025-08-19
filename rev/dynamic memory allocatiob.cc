@@ -46,4 +46,6 @@ int main()
 
         cout << *(ptr5 + i) << " ";
     }
+
+    delete []ptr5;// deallocate
 }
