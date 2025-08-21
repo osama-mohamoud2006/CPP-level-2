@@ -26,9 +26,31 @@ int main()
     str.push_back('!'); // add single char
     cout << str << endl;
 
-    str.pop_back();//remove the last char 
+    str.pop_back(); // remove the last char
     cout << str << endl;
 
-    
+    cout << str.find("e") << endl; // return the index of first occurence of substr
+
+    if (str.find("j") == string::npos)
+        cout << "isn't exist" << endl;
+
+    cout << char(toupper('h')) << endl;
+
+    cout << char(tolower('H')) << endl;
+
+    char c = 'u';
+    if (isupper(c))
+        cout << "Uppercase\n"; // Uppercase
+
+    if (islower(c))
+        cout << "Not Uppercase\n"; // Uppercase
+
+    if (isdigit('6'))
+        cout << "Digit!" << endl;
+    else
+        cout << "NOT DIGIT! " << endl;
+
+        if(ispunct('^')) cout<<"yapp"<<endl;
+        else cout<<"NOt"<<endl;
 
 }
