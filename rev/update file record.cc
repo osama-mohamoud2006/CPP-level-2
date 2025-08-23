@@ -55,6 +55,8 @@ void update_record(string path, string what_do_you_want_to_updata, string NewWor
     move_vector_elements_to_vector(path, vdata); // move vector content to file
 }
 
+//print file content on screen 
+
 void print_file_content(string path)
 {
     //read mode
