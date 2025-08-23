@@ -42,5 +42,5 @@ int main()
 
     cout<<"is day light? "<<StructTm->tm_isdst<<endl;
 
-
+/
 }
