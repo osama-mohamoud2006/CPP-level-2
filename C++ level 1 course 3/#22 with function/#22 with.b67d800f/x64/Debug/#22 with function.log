@@ -1,0 +1,3 @@
+﻿  #22 with function.cpp
+D:\projects\c++ course\c++ with abu-hadhoud\#22 with function\#22 with function.cpp(5,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  #22 with function.vcxproj -> D:\projects\c++ course\c++ with abu-hadhoud\#22 with function\x64\Debug\#22 with function.exe
