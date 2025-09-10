@@ -1,0 +1,4 @@
+﻿  023 Circle Area circle Described Around an Arbitra.cpp
+D:\projects\c++ course\c++ with abu-hadhoud\023 Circle Area circle Described Around an Arbitra\023 Circle Area circle Described Around an Arbitra.cpp(9,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\projects\c++ course\c++ with abu-hadhoud\023 Circle Area circle Described Around an Arbitra\023 Circle Area circle Described Around an Arbitra.cpp(11,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  023 Circle Area circle Described Around an Arbitra.vcxproj -> D:\projects\c++ course\c++ with abu-hadhoud\023 Circle Area circle Described Around an Arbitra\x64\Debug\023 Circle Area circle Described Around an Arbitra.exe

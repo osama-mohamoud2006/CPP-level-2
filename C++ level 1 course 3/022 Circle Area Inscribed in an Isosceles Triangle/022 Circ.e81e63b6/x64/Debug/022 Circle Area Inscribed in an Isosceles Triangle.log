@@ -1,0 +1,4 @@
+﻿  022 Circle Area Inscribed in an Isosceles Triangle.cpp
+D:\projects\c++ course\c++ with abu-hadhoud\022 Circle Area Inscribed in an Isosceles Triangle\022 Circle Area Inscribed in an Isosceles Triangle.cpp(13,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\projects\c++ course\c++ with abu-hadhoud\022 Circle Area Inscribed in an Isosceles Triangle\022 Circle Area Inscribed in an Isosceles Triangle.cpp(14,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  022 Circle Area Inscribed in an Isosceles Triangle.vcxproj -> D:\projects\c++ course\c++ with abu-hadhoud\022 Circle Area Inscribed in an Isosceles Triangle\x64\Debug\022 Circle Area Inscribed in an Isosceles Triangle.exe

@@ -1,0 +1,3 @@
+﻿  017 Triangle Area.cpp
+D:\projects\c++ course\c++ with abu-hadhoud\017 Triangle Area\017 Triangle Area.cpp(12,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  017 Triangle Area.vcxproj -> D:\projects\c++ course\c++ with abu-hadhoud\017 Triangle Area\x64\Debug\017 Triangle Area.exe

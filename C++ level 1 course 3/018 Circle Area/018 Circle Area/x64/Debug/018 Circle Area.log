@@ -1,0 +1,4 @@
+﻿  018 Circle Area.cpp
+D:\projects\c++ course\c++ with abu-hadhoud\018 Circle Area\018 Circle Area.cpp(8,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\projects\c++ course\c++ with abu-hadhoud\018 Circle Area\018 Circle Area.cpp(9,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  018 Circle Area.vcxproj -> D:\projects\c++ course\c++ with abu-hadhoud\018 Circle Area\x64\Debug\018 Circle Area.exe
