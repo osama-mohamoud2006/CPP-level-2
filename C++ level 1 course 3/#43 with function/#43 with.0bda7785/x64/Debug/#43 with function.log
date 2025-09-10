@@ -1,0 +1,4 @@
+﻿  #43 with function.cpp
+D:\projects\c++ course\c++ with abu-hadhoud\#43 with function\#43 with function.cpp(32,1): error C4700: uninitialized local variable 'd' used
+D:\projects\c++ course\c++ with abu-hadhoud\#43 with function\#43 with function.cpp(33,1): error C4700: uninitialized local variable 'remindar' used
+D:\projects\c++ course\c++ with abu-hadhoud\#43 with function\#43 with function.cpp(33,1): error C4700: uninitialized local variable 'h' used
