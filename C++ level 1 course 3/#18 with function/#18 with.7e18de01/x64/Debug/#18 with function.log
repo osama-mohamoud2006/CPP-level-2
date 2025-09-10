@@ -1,0 +1,5 @@
+﻿  #18 with function.cpp
+D:\projects\c++ course\c++ with abu-hadhoud\#18 with function\#18 with function.cpp(10,8): warning C4305: '=': truncation from 'double' to 'float'
+D:\projects\c++ course\c++ with abu-hadhoud\#18 with function\#18 with function.cpp(15,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\projects\c++ course\c++ with abu-hadhoud\#18 with function\#18 with function.cpp(24,11): warning C4305: 'initializing': truncation from 'double' to 'float'
+  #18 with function.vcxproj -> D:\projects\c++ course\c++ with abu-hadhoud\#18 with function\x64\Debug\#18 with function.exe
