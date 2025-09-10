@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 🔁 Change directory to the project
-project_dir="E:/projects/c++ course/c++ level 2 course 6"
+project_dir="E:/projects/c++ course/c++ level 1 and 2 course 3 and 6"
 cd "$project_dir" || exit
 
 # 🗓️ Create or read project creation date
