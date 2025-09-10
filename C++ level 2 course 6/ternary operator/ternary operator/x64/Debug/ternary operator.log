@@ -1,0 +1,5 @@
+﻿  ternary operator.cpp
+E:\projects\c++ course\c++ level 2 course 6\ternary operator\ternary operator.cpp(7,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+E:\projects\my library\logic_stuff.h(73,1): warning C4715: 'AllStuff::get_random_stuff': not all control paths return a value
+E:\projects\my library\array_stuff.h(89,1): warning C4715: 'AllStuff::is_number_in_array': not all control paths return a value
+  ternary operator.vcxproj -> E:\projects\c++ course\c++ level 2 course 6\ternary operator\x64\Debug\ternary operator.exe

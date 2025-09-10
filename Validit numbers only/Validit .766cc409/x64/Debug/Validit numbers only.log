@@ -1,5 +1,0 @@
-﻿  Validit numbers only.cpp
-E:\projects\my library\logic_stuff.h(94,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Validit%20numbers%20only.cpp')
-  
-  Validit numbers only.vcxproj -> E:\projects\c++ course\c++ level 2 course 6\Validit numbers only\x64\Debug\Validit numbers only.exe
