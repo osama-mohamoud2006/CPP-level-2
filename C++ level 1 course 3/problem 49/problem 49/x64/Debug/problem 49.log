@@ -1,0 +1,3 @@
+﻿  problem 49.cpp
+E:\projects\c++ course\c++ with abu-hadhoud\problem 49\problem 49.cpp(17,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\projects\c++ course\c++ with abu-hadhoud\problem 49\problem 49.cpp(31,1): error C4716: 'confrim': must return a value

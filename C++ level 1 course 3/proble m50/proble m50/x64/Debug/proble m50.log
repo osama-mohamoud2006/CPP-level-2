@@ -1,0 +1,3 @@
+﻿  proble m50.cpp
+E:\projects\c++ course\c++ with abu-hadhoud\proble m50\proble m50.cpp(35,1): warning C4715: 'confrim_card': not all control paths return a value
+  proble m50.vcxproj -> E:\projects\c++ course\c++ with abu-hadhoud\proble m50\x64\Debug\proble m50.exe

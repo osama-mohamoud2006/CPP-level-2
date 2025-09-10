@@ -1,0 +1,4 @@
+﻿  data casting.cpp
+D:\projects\c++ course\c++ with abu-hadhoud\data casting\data casting.cpp(17,11): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\projects\c++ course\c++ with abu-hadhoud\data casting\data casting.cpp(27,6): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  data casting.vcxproj -> D:\projects\c++ course\c++ with abu-hadhoud\data casting\x64\Debug\data casting.exe

@@ -1,0 +1,3 @@
+D:/projects/c++ course/c++ with abu-hadhoud/cmake-build-debug/CMakeFiles/c___with_abu_hadhoud.dir
+D:/projects/c++ course/c++ with abu-hadhoud/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/projects/c++ course/c++ with abu-hadhoud/cmake-build-debug/CMakeFiles/rebuild_cache.dir

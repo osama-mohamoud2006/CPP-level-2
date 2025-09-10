@@ -1,0 +1,3 @@
+﻿  problem 48.cpp
+E:\projects\c++ course\c++ with abu-hadhoud\problem 48\problem 48.cpp(17,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  problem 48.vcxproj -> E:\projects\c++ course\c++ with abu-hadhoud\problem 48\x64\Debug\problem 48.exe
