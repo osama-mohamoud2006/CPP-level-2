@@ -1,0 +1,7 @@
+﻿  #34 with else if.cpp
+D:\projects\c++ course\c++ with abu-hadhoud\#34 with else if\#34 with else if.cpp(13,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\projects\c++ course\c++ with abu-hadhoud\#34 with else if\#34 with else if.cpp(17,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\projects\c++ course\c++ with abu-hadhoud\#34 with else if\#34 with else if.cpp(21,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\projects\c++ course\c++ with abu-hadhoud\#34 with else if\#34 with else if.cpp(25,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\projects\c++ course\c++ with abu-hadhoud\#34 with else if\#34 with else if.cpp(29,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  #34 with else if.vcxproj -> D:\projects\c++ course\c++ with abu-hadhoud\#34 with else if\x64\Debug\#34 with else if.exe
